@@ -9,7 +9,7 @@ import com.sample.simpsonsviewer.model.local.entities.CharacterEntity
     entities = [
         CharacterEntity::class
     ],
-    version = 2
+    version = 1
 )
 abstract class SimpsonsDatabase: RoomDatabase() {
     abstract val simpsonsDao: SimpsonsDao

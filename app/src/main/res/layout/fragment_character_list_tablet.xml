@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/simpsonscouch_transparent"
+            android:src="@drawable/blue_bg"
             tools:ignore="MissingConstraints"
             android:contentDescription="Character Hero Image" />
 
@@ -61,7 +61,8 @@
                 android:id="@+id/sv_simpsons_characters_tablet"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/text_color"
+                android:background="@color/background_color"
+                android:textColor="@color/text_color"
                 android:inputType="textCapCharacters"
                 android:focusedByDefault="true"
                 app:layout_constraintEnd_toEndOf="parent"

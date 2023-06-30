@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simpsons_tablet_navigation"
+    app:startDestination="@id/characterListTabletFragment">
+
+    <fragment
+        android:id="@+id/characterListTabletFragment"
+        android:name="com.sample.simpsonsviewer.views.CharacterListTabletFragment"
+        android:label="fragment_character_list_tablet"
+        tools:layout="@layout/fragment_character_list_tablet" />
+</navigation>

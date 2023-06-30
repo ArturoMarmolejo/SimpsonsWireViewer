@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".views.DetailsFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/character_thumbnail"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/character_thumbnail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/character_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="@string/character_name"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/character_thumbnail"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingRight="5dp"
+                app:layout_constrainedWidth="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_character_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/character_description"
+                android:textSize="15sp"
+                android:textColor="@color/text_color"
+                android:layout_marginStart="16dp"
+                android:contentDescription="character description"
+                app:layout_constraintStart_toEndOf="@id/character_thumbnail"
+                app:layout_constraintTop_toBottomOf="@id/character_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingRight="5dp"
+                app:layout_constrainedWidth="true"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        Add more content here -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpsonsViewer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_simpsons_catalog">The Simpsons Catalog</string>
+    <string name="character_description">Character description</string>
+    <string name="character_thumbnail">Character Thumbnail</string>
+    <string name="character_name">Character name</string>
+    <string name="search_for_a_specific_character">Search for a specific character</string>
+</resources>
